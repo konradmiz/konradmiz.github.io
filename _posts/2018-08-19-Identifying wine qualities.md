@@ -265,7 +265,7 @@ ggplot(wine_subset, aes(x = order, y = Frac)) +
   labs(y = "% Occurence")
 ```
 
-<img src="_posts/unnamed-chunk-9-1.png" width="100%" />
+<img src="images/unnamed-chunk-9-1.png" width="100%" />
 
 There are some words common across most of these varieties: `fruit`, `tannins`, and `cherry` are frequent in the wine varieties I drink most often (Merlot, Cabernet Sauvignon, Pinot Noir). These word show up between 2% - 2.5% of the time in the reviews. Next time I'm drinking one of those, I'll make sure to casually use one of those words every so often!
 
