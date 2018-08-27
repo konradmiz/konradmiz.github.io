@@ -266,7 +266,7 @@ ggplot(wine_subset, aes(x = order, y = Frac)) +
 ```
 
 #<img src="images/Wine%20Reviews/unnamed-chunk-9-1.png" width="100%" />
-![Word Frequencies](konradmiz.github.com/konradmiz.github.io/images/Wine%20Reviews/unnamed-chunk-9-1.png)
+(![Word Frequencies]({{ site.baseurl }}/images/Wine%Reviews/unnamed-chunk-9-1.png))
 There are some words common across most of these varieties: `fruit`, `tannins`, and `cherry` are frequent in the wine varieties I drink most often (Merlot, Cabernet Sauvignon, Pinot Noir). These word show up between 2% - 2.5% of the time in the reviews. Next time I'm drinking one of those, I'll make sure to casually use one of those words every so often!
 
 On the white wine (Chardonnay Riesling, Sauvignon Blanc, Zinfandel) or lighter (Rose) side, I'm pretty safe declaring I get hints of `fruit` and `acidity`. However, I'll have to be careful to remember that only Chardonnays typically have that `oak`y finish.
