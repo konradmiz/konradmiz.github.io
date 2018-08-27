@@ -299,7 +299,7 @@ ggplot(shorter_tf_idf, aes(x = order, y = tf_idf)) +
   labs(y = "TF-IDF")
 ```
 
-<img src="images/Wine%20Reviews/unnamed-chunk-10-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/Wine%20Reviews/unnamed-chunk-10-1.png" width="100%" />
 
 Some interesting words emerge from this. Bordeaux-style reds are characterized as `powerful`, or `dominat[ing]`, Merlots have a `char` or `blackberry` element, Sauvignon Blancs are associated with `gooseberry`, and Syrahs have a `smoked` aspect (that I actually have been able to taste myself). Many of the wines have a floral quality as well -- `flower`, `petals`, and `violets` all make an appearance.
 
@@ -349,4 +349,4 @@ ggplot(wine_plot_data, aes(x, y, label = word)) +
   guides(alpha = FALSE)
 ```
 
-<img src="images/Wine%20Reviews/unnamed-chunk-12-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/Wine%20Reviews/unnamed-chunk-12-1.png" width="100%" />
