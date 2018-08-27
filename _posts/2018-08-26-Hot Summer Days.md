@@ -128,7 +128,7 @@ degree_days %>%
 
 <img src="images/DegreeDays/unnamed-chunk-6-1.png" width="100%" />
 
-It looks like June 2015 was generally hotter hotter than this year has been to date, though we've decreased the gap since July 1st (Fractional year: 0.4958904). We can look at just June and August heat:
+It looks like June 2015 was generally hotter than this year has been to date, though we've decreased the gap since July 1st (Fractional year: 0.4958904). We can look at just June and August heat:
 
 ``` r
 degree_days %>%
