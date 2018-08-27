@@ -1,5 +1,3 @@
-Hot Summer Days
-================
 August 25, 2018
 
 Summary
