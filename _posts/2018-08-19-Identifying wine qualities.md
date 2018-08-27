@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Identifying wine qualities
+August 19, 2018
 ---
 
 
@@ -113,7 +114,7 @@ Some notes about the dataset:
 
 -   Wines all ranged from 80 to 100 points, even though price ranged four orders of magnitude ($4 - $3300)
 
--   One taster was responsile for 20% of all the reviews!
+-   One taster was responsible for 20% of all the reviews!
 
 -   Wine names and wineries show an fairly even distribution (there are no wines with an outsized rating frequency)
 
