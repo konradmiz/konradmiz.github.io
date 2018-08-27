@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hot summer days
-August 26, 2018
+date: August 26, 2018
 ---
 
 Summary
