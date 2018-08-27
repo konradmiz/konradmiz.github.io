@@ -10,5 +10,5 @@ Systems Science Masters student at Portland State. Interested in data science an
 
 [mkonrad @ pdx.edu](mailto:mkonrad@pdx.edu)
 
-[LinkedIn](linkedin.com/in/konradmiz)
+[LinkedIn](https://linkedin.com/in/konradmiz)
 
