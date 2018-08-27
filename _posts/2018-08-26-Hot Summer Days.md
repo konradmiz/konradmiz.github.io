@@ -109,7 +109,7 @@ ggplot(degree_days, aes(DatePlot, CoolingSum, group = Year, color = as.factor(De
        color = "Decade")
 ```
 
-<img src="images/DegreeDays/unnamed-chunk-5-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/DegreeDays/unnamed-chunk-5-1.png" width="100%" />
 
 Generally, we can see that the 2010s have been the hottest years. The hottest year is 2015, while 2018 (still in progress) is the second hottest. So as we can see, though 2018 has been a hot year, it has not actually been as hot as 2015 was.
 
@@ -130,7 +130,7 @@ degree_days %>%
        color = "Year")
 ```
 
-<img src="images/DegreeDays/unnamed-chunk-6-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/DegreeDays/unnamed-chunk-6-1.png" width="100%" />
 
 It looks like June 2015 was generally hotter than this year has been to date, though we've decreased the gap since July 1st (Fractional year: 0.4958904). We can look at just June and August heat:
 
@@ -152,7 +152,7 @@ degree_days %>%
        color = "Year") 
 ```
 
-<img src="images/DegreeDays/unnamed-chunk-7-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/DegreeDays/unnamed-chunk-7-1.png" width="100%" />
 
 We've had a hotter summer if we start counting on July 1st. All of August has been hotter so far too (Fractional Year 0.5808219 - 0.6246575).
 
