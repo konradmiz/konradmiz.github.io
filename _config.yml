@@ -14,6 +14,8 @@ description: Data scientist, Masters student in Systems Science at Portland Stat
 #
 # Flags below are optional
 #
+plugins:
+  - jekyll-seo-tag
 
 # Includes an icon in the footer for each username you enter
 footer-links:
