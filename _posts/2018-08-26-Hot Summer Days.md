@@ -63,7 +63,7 @@ min + max + # syntax from library patchwork
                   theme = theme(plot.title = element_text(hjust = 0.5, size = 14)))
 ```
 
-<img src="images/DegreeDays/unnamed-chunk-3-1.png" width="100%" />
+<img src="{{ site.baseurl }}/images/DegreeDays/unnamed-chunk-3-1.png" width="100%" />
 
 Cooling degrees summarized
 --------------------------
