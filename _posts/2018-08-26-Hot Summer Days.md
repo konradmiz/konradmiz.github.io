@@ -150,7 +150,7 @@ degree_days %>%
 
 <img src="images/DegreeDays/unnamed-chunk-7-1.png" width="100%" />
 
-We've had a hotter summer if we start counting on July 1st. All of August has been hotter so far too (0.5808219 - 0.6246575).
+We've had a hotter summer if we start counting on July 1st. All of August has been hotter so far too (Fractional Year 0.5808219 - 0.6246575).
 
 Conclusion
 ----------
