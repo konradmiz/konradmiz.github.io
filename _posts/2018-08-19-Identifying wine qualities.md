@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Identifying wine qualities
 date: August 19, 2018
 ---
