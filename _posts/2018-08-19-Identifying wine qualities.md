@@ -265,7 +265,7 @@ ggplot(wine_subset, aes(x = order, y = Frac)) +
   labs(y = "% Occurence")
 ```
 
-<img src="images/unnamed-chunk-9-1.png" width="100%" />
+<img src="images/Wine Reviews/unnamed-chunk-9-1.png" width="100%" />
 
 There are some words common across most of these varieties: `fruit`, `tannins`, and `cherry` are frequent in the wine varieties I drink most often (Merlot, Cabernet Sauvignon, Pinot Noir). These word show up between 2% - 2.5% of the time in the reviews. Next time I'm drinking one of those, I'll make sure to casually use one of those words every so often!
 
@@ -298,7 +298,7 @@ ggplot(shorter_tf_idf, aes(x = order, y = tf_idf)) +
   labs(y = "TF-IDF")
 ```
 
-<img src="images/unnamed-chunk-10-1.png" width="100%" />
+<img src="images/Wine Reviews/unnamed-chunk-10-1.png" width="100%" />
 
 Some interesting words emerge from this. Bordeaux-style reds are characterized as `powerful`, or `dominat[ing]`, Merlots have a `char` or `blackberry` element, Sauvignon Blancs are associated with `gooseberry`, and Syrahs have a `smoked` aspect (that I actually have been able to taste myself). Many of the wines have a floral quality as well -- `flower`, `petals`, and `violets` all make an appearance.
 
@@ -348,4 +348,4 @@ ggplot(wine_plot_data, aes(x, y, label = word)) +
   guides(alpha = FALSE)
 ```
 
-<img src="images/unnamed-chunk-12-1.png" width="100%" />
+<img src="images/Wine Reviews/unnamed-chunk-12-1.png" width="100%" />
