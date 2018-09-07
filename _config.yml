@@ -6,20 +6,14 @@
 name: Konrad Miziolek
 
 # Short bio or description (displayed in the header)
-description: Data scientist, Masters student in Systems Science at Portland State University. I play with bikes data at BIKETOWNpdx. 
+description: Data scientist, Masters student in Systems Science at Portland State University. I play with bikes data at BIKETOWNpdx.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: {{ site.baseurl }}/images/Blog%20Photo.jpg
-# https://avatars0.githubusercontent.com/u/5964679?s=40&v=4
-#
-#
+
 #
 # Flags below are optional
 #
-# plugins:
-#  - jekyll-seo-tag
-
-theme: slate
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -53,12 +47,12 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-# baseurl: /konradmiz.github.io
 baseurl: ""
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-# excerpt_separator: <!--more-->
+
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
