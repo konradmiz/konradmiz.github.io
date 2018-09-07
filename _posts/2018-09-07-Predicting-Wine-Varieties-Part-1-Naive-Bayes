@@ -1,11 +1,15 @@
+---
+layout: post
+title: Predicting Wine Varieties, Part 1 -- Naive Bayes
+excerpt_separator: <!--more-->
+date: September 7, 2018
+---
 
-Predicting Wine Varieties, part 1
-=================================
+## Summary
 
-Summary
--------
+This is the first post in a series where I use different algorithms to try to classify, i.e. predict a wine variety given its description. I start off with a simple yet powerful algorithm called *Naive Bayes*. This algorithm is particularly easy to build (and use) from scratch and so though the code is not intended for use in production, it was fun to write. It performed admirably (33% accuracy on a validation set of 4917 rows representing 40 different varieties, given a description of more than 140 characters). It will be compared head-to-head with the other algorithms on the test set at the conclusion of this series!
 
-This is the first post in a series where I use different algorithms to try to classify, i.e. predict a wine variety given its description. I start off with a simple yet powerful algorithm called *Naive Bayes*. This algorithm is particularly easy to build (and use) from scratch and so though the code is not intended for use in production, it was fun to write. It performed admirably (33% accuracy on a validation set of 4917 rows representing 40 different varieties, given a description of more than 140 characters). It will be compared head-to-head on the test set at the conclusion of this series!
+<!--more-->
 
 ### Introduction
 
