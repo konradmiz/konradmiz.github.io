@@ -6,7 +6,7 @@ date: August 19, 2018
 ---
 
 
-### Summary
+## Summary
 
 With over 100,000 wine reviews to play with, I try to find words useful for describing different types of wine to make up for my unrefined palate. Given a wine I've never had before, but I know which type it is, I try to find both words that are common to describing that variety, and more subtle words to describe it if I feel like going out on a limb. I additionally create some word clouds of different wines by variety; these facetted plots are out of reach of the `wordcloud` library but done passably by extending `ggrepel`.
 
