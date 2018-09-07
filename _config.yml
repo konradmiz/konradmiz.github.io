@@ -54,7 +54,7 @@ baseurl: ""
 #
 
 permalink: /:title/
-remote_theme: slate
+theme: slate
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
