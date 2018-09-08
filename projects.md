@@ -13,4 +13,4 @@ Other fun projects I've done:
 
 * <a href= "https://github.com/konradmiz/Agent-Based-Modeling-Ants" target='_blank'>Simulating ant foraging behavior with an agent-based model in NetLogo (Fall 17)</a>
 
-* <a href= "https://pdxscholar.library.pdx.edu/etm_studentprojects/1174/" target='_blank'>A simple Data Envelopment Analysis function in R(Fall 17)</a>
+* <a href= "https://pdxscholar.library.pdx.edu/etm_studentprojects/1174/" target='_blank'>A simple Data Envelopment Analysis (DEA) function in R (Fall 17)</a>
