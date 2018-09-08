@@ -11,4 +11,5 @@ Other fun projects I've done:
 
 * Building an agent-based model of animal predation, with object orientation, in Python
 
-* ![Simulating ant foraging behavior with an agent-based model in NetLogo](https://github.com/konradmiz/Agent-Based-Modeling-Ants)
+* ![Simulating ant foraging behavior with an agent-based model in NetLogo]()
+* <a href= "https://github.com/konradmiz/Agent-Based-Modeling-Ants" target='_blank'>Simulating ant foraging behavior with an agent-based model in NetLogo</a>
