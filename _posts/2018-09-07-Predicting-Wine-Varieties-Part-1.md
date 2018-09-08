@@ -24,11 +24,10 @@ Since P(B) is constant it can be ignored. By extending to multiple dimensions (a
 
 *P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>) = *P*(*x*<sub>1</sub>|*C*<sub>*i*</sub>)*P*(*x*<sub>2</sub>|*C*<sub>*i*</sub>)*P*(*C*<sub>*i*</sub>), or extending to n dimensions,
 
-*P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>),
+*P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>).
 
-where each *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>) is the observed frequency of word *j* belonging to class *i*.
+In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>|), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. To do so I can find the overall frequency of the varieties within the dataset, *P*(*C*<sub>*i*</sub>), and take the product of the likelihood of each word in the description belonging to a each wine variety, where each *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>) is the observed frequency of word *j* belonging to class *i*.
 
-In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>|), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. To do so I can find the overall frequency of the varieties within the dataset, *P*(*C*<sub>*i*</sub>), and take the product of the likelihood of each word in the description belonging to a each wine variety,
 
 The word *Naive* comes from the model assumption that a word's occurrence in a piece of text is independent of every other word in the text. While this typically does not hold in any practical setting (words are correlated with each other: if a text contains the word 'wine' it is more likely to also contain the word 'drink'), the model still performs quite well in many applications.
 
@@ -166,7 +165,7 @@ The lowercase n represents the number of times that word appeared for that varie
 
 One consideration in a text mining task like this is that there may be words in the validation or testing datasets that do not appear in the training data for that variety of wine. Instead of treating these as impossible events with a probability zero (since they did actually occur), instead we need to define a non-zero probability for that word being used to describe that wine.
 
-This process is called Laplace or additive smoothing, and involves using a uniform distribution, such that we assign every not-seen word a probability of occurence of $\\frac{1}{1 + \# of varieties + \# of distinct words}$.
+This process is called Laplace or additive smoothing, and involves using a uniform distribution, such that we assign every not-seen word a probability of occurence of $\frac{1}{1 + \# of varieties + \# of distinct words}$.
 
 ``` r
 num_varieties <- nrow(priors)
