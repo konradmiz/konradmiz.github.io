@@ -24,7 +24,7 @@ Since P(B) is constant it can be ignored. By extending to multiple dimensions (a
 
 *P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>) = *P*(*x*<sub>1</sub>\|*C*<sub>*i*</sub>)*P*(*x*<sub>2</sub>\|*C*<sub>*i*</sub>)*P*(*C*<sub>*i*</sub>), or extending to n dimensions,
 
-*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ $*P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>)$.
+*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>).
 
 
 In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. 
