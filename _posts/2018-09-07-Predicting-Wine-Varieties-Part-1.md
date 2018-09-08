@@ -18,22 +18,20 @@ There are many different approaches to text classification, and I'll be explorin
 
 It relies on Bayes' rule that:
 
-*P*(*A*|*B*) = $\\frac{P(B|A)P(A)}{P(B)}$
+*P*(*A*\|*B*) = $\\frac{P(B\|A)P(A)}{P(B)}$
 
 Since P(B) is constant it can be ignored. By extending to multiple dimensions (and using the chain rule of probability to do so), it can be shown that the probability of class i is
 
-*P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>) = *P*(*x*<sub>1</sub>|*C*<sub>*i*</sub>)*P*(*x*<sub>2</sub>|*C*<sub>*i*</sub>)*P*(*C*<sub>*i*</sub>), or extending to n dimensions,
+*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>) = *P*(*x*<sub>1</sub>\|*C*<sub>*i*</sub>)*P*(*x*<sub>2</sub>\|*C*<sub>*i*</sub>)*P*(*C*<sub>*i*</sub>), or extending to n dimensions,
 
-*P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>).
+*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>).
 
 
-In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>|), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. 
+In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. 
 
-To do so I can find the overall frequency of the varieties within the dataset, *P*(*C*<sub>*i*</sub>), 
+To do so I can find the overall frequency of the varieties within the dataset, *P*(*C*<sub>*i*</sub>), and take the product of the likelihood of each word in the description belonging to a each wine variety, where each 
 
-and take the product of the likelihood of each word in the description belonging to a each wine variety, where each 
-
-*P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>) is the observed frequency of word *j* belonging to class *i*.
+*P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>) is the observed frequency of word *j* belonging to class *i*.
 
 
 The word *Naive* comes from the model assumption that a word's occurrence in a piece of text is independent of every other word in the text. While this typically does not hold in any practical setting (words are correlated with each other: if a text contains the word 'wine' it is more likely to also contain the word 'drink'), the model still performs quite well in many applications.
