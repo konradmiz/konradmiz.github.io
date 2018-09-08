@@ -18,13 +18,13 @@ There are many different approaches to text classification, and I'll be explorin
 
 It relies on Bayes' rule that:
 
-*P*(*A*\|*B*) = $\\frac{P(B\|A)P(A)}{P(B)}$
+*P*(*A*\|*B*) = \frac{P(B\|A)P(A)}{P(B)}
 
 Since P(B) is constant it can be ignored. By extending to multiple dimensions (and using the chain rule of probability to do so), it can be shown that the probability of class i is
 
 *P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>) = *P*(*x*<sub>1</sub>\|*C*<sub>*i*</sub>)*P*(*x*<sub>2</sub>\|*C*<sub>*i*</sub>)*P*(*C*<sub>*i*</sub>), or extending to n dimensions,
 
-*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod<sub>i=1</sub><sup>n</sup>$ *P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>).
+*P*(*C*<sub>*i*</sub>\|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) \prod<sub>i=1</sub><sup>n</sup>$ *P*(*x*<sub>*j*</sub>\|*C*<sub>*i*</sub>).
 
 
 In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. 
