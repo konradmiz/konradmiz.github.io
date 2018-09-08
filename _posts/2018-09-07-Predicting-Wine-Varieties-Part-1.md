@@ -26,11 +26,10 @@ Since P(B) is constant it can be ignored. By extending to multiple dimensions (a
 
 *P*(*C*<sub>*i*</sub>|*x*<sub>1</sub>, *x*<sub>2</sub>, ..., *x*<sub>*n*</sub>) = *P*(*C*<sub>*i*</sub>) $\\prod\_{i=1}^{n}$ *P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>).
 
+
 In this case, I am trying to find the class of the wine, *P*(*C*<sub>*i*</sub>|), given the words in the description *x*<sub>1</sub>, ..., *x*<sub>*n*</sub>. 
 
-To do so I can find the overall frequency of the varieties within the dataset, 
-
-*P*(*C*<sub>*i*</sub>), 
+To do so I can find the overall frequency of the varieties within the dataset, *P*(*C*<sub>*i*</sub>), 
 
 and take the product of the likelihood of each word in the description belonging to a each wine variety, where each 
 
