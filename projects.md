@@ -1,7 +1,7 @@
 Fun work projects I've worked on include: 
 * A discrete event simulation model that incorporates seasonal and time-of-day ridership to determine the best allocation of bikes in areas across the city (which was quite useful when firmware issues broke a lot of bikes)
 
-* Quantifying bike availability through a variety of metrics I implemented so they can be tracked moth over month
+* Quantifying bike availability through a variety of metrics I implemented so they can be tracked month over month
 
 * Building several different R Shiny apps (including maps and dashboards) to keep track of bikes in the field and how the system is performing. 
 
