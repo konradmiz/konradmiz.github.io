@@ -14,7 +14,7 @@ I currently work for Lyft Bikes and Scooters, [which recently bought my former e
 
 I'm always looking to connect with data people, so please reach out to me! You can find me at:
 
-[Email](mailto:konradmiziolek@gmail.com)
+[konradmiziolek@gmail.com](mailto:konradmiziolek@gmail.com)
 
 [LinkedIn](https://linkedin.com/in/konradmiz)
 
