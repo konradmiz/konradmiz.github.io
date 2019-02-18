@@ -8,13 +8,13 @@ date: August 19, 2018
 
 ## Summary
 
-With over 100,000 wine reviews to play with, I try to find words useful for describing different types of wine to make up for my unrefined palate. Given a wine I've never had before, but I know which type it is, I try to find both words that are common to describing that variety, and more subtle words to describe it if I feel like going out on a limb. I additionally create some word clouds of different wines by variety; these facetted plots are out of reach of the `wordcloud` library but done passably by extending `ggrepel`.
+With over 100,000 wine reviews to play with (and to make up for my unrefined palate), I try to find words useful for describing different types of wine. Given a wine I've never had before, but I know which variety it is, I try to find both words that are common to describing that variety, and more subtle words to describe it if I feel like going out on a limb. I additionally create some word clouds of different wines by variety; these facetted plots are out of reach of the `wordcloud` library but done passably by extending `ggrepel`.
 
 <!--more-->
 
 ### Introduction
 
-One of my favorite times of the week is Saturday evenings, when I share a bottle of wine with my girlfriend and we spend time talking or watching a show or movie. Unfortunately, my palate is not attuned to the subtleties of wine, especially not the $4 bottle we invariably drink as frugal students. She grew up smelling and tasting different wine varieties and does quite well picking out individual flavors and I can tell varieties of wine apart during a tasting, but definitely not whether I'm getting aromas of raspberries or blackberries in the wine at hand. Tired of this cluelessness, and after finding a dataset on Kaggle with over 100,000 reviews of different wines I figured I can use the power of crowdsourcing to help me out a bit.
+One of my favorite times of the week is Saturday evenings, when I share a bottle of wine with my girlfriend and we spend time talking or watching a show or movie. Unfortunately, my palate is not attuned to the subtleties of wine, especially not the $4 bottle we as frugal students invariably drink. She grew up smelling and tasting different wine varieties and does quite well picking out individual flavors. I can tell varieties of wine apart during a tasting, but definitely not whether I'm getting aromas of raspberries or blackberries in the wine at hand. Tired of this cluelessness, and after finding a dataset on Kaggle with over 100,000 reviews of different wines I figured I can use the power of crowdsourcing to help me out a bit.
 
 There were three main goals of this text-mining exercise:
 
