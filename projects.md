@@ -1,3 +1,10 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+
 Fun work projects I've worked on include: 
 * A discrete event simulation model that incorporates seasonal and time-of-day ridership to determine the best allocation of bikes in areas across the city (which was quite useful when firmware issues broke a lot of bikes)
 
