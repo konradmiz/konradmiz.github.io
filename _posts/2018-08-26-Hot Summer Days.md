@@ -7,10 +7,12 @@ date: August 26, 2018
 
 ## Summary
 
-We recently broke the record for number of days above 90 F in a year (with 30 in 2018, as of August 21st) (<https://twitter.com/NWSPortland/status/1032384600696213504>). I wanted to visualize whether this sustained heat really was unusual, or if I were falling for recency bias. I remembered an article from the New York Times that visualized Steph Curry's 3-point shooting 2015-2016 NBA season in an interesting way, showing the cumulative sum of three pointers made over the course of the season (<https://www.nytimes.com/interactive/2016/04/16/upshot/stephen-curry-golden-state-warriors-3-pointers.html>).
+In Portland we recently broke the record for number of days above 90 F in a year (with 30 in 2018, as of August 21st) (<https://twitter.com/NWSPortland/status/1032384600696213504>). I wanted to visualize whether this sustained heat really was unusual, or if I were falling for recency bias. I remembered an article from the New York Times that visualized Steph Curry's 3-point shooting 2015-2016 NBA season in an interesting way, showing the cumulative sum of three pointers made over the course of the season (<https://www.nytimes.com/interactive/2016/04/16/upshot/stephen-curry-golden-state-warriors-3-pointers.html>).
 
 I produce a simliar graph using cooling days as the metric, using open data from the NOAA collected at the Portland airport (PDX) from 1970 to 2018. I show that this summer has generally been hotter than every year since 1970 except for 2015.
+
 <!--more-->
+
 Data Collection
 ---------------
 
@@ -74,7 +76,7 @@ One way to calculate the total day's hotness is via heating and cooling degree d
 
 Hot days therefore represent cooling days (and cold days represent heating days), and the cumulative sum of the cooling days in a summer approximates the integral of the total heat experienced that season (i.e. how hot it feels).
 
-Below, I calculate the mean and the cooling or heating degree days for that date. With these degree days calculated, I can group by year and calculate the total (cumulative sum) cooling days for each of the last ~50 summers. To be able to compare dates across years, I create another variable for the fractional representation of the year. For example, the decimal representation of July 1st is 2017.496 for 2017 and 2018.496 for 2018. I can then subtract the year from those values and compare (and plot) them directly.
+Below, I calculate the mean and the cooling or heating degree days for that date. With these degree days calculated, I can group by year and calculate the total (cumulative sum) cooling days for each of the last ~50 summers. To be able to compare dates across years, I create another variable for the fractional representation of the year. For example, the decimal representation of July 1st is 2017.496 for 2017 and 2018.496 for 2018. I can then strip the year from those values and compare (and plot) them directly.
 
 ``` r
 degree_days <- weather_data %>%
@@ -154,7 +156,7 @@ degree_days %>%
 
 <img src="{{ site.baseurl }}/images/DegreeDays/unnamed-chunk-7-1.png" width="100%" />
 
-We've had a hotter summer if we start counting on July 1st. All of August has been hotter so far too (Fractional Year 0.5808219 - 0.6246575).
+We've had a hotter summer if we start counting on July 1st. All of August has been hotter so far too (Fractional Year dates 0.5808219 - 0.6246575).
 
 Conclusion
 ----------
