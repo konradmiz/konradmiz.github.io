@@ -9,7 +9,7 @@ name: Konrad Miziolek
 description: Data scientist, Masters student in Systems Science at Portland State University. I play with bike data at BIKETOWNpdx.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{ site.baseurl }}/images/Blog%20Photo.jpg
+avatar: images/Blog%20Photo.jpg
 # images/Blog%20Photo.jpg
 
 #
