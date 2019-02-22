@@ -182,13 +182,7 @@ num_words <- train_tokens %>%
 new_prob <- 1/(num_varieties + num_words + 1)
 ```
 
-Now that we have the priors 
-
-(*P*(*C*<sub>*i*</sub>)) 
-
-and the likelihoods 
-
-(*P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>)), 
+Now that we have the priors (*P*(*C*<sub>*i*</sub>)) and the likelihoods (*P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>)), 
 
 the classification can now be done. For each description in the validation set, I perform a similar data processing task as I did with the training set:
 
@@ -208,7 +202,7 @@ B: All words match the description, and *P*(*x*<sub>1</sub>|*B*) = 0.4, and *P*(
 
 C: All words match the description, and *P*(*X*<sub>1</sub>|*C*) = 0.1, and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub>|*C*) = 0.5
 
-By ignoring the words that didn't match, the likelihood of the word belonging to A would be `0.5`, while the likelihood for belonging to B would be 0.4 \* (0.5)<sup>99</sup> = 6.310887210^{-31} and the likelihood of belonging to C would be 0.1 \* (0.5)<sup>99</sup> = 1.577721810^{-31}. So while clearly class B should be the correct one, since we didn't include 99 (missing) term probabilities in A, A has the incorrectly highest likelihood.
+By ignoring the words that didn't match, the likelihood of the word belonging to A would be `0.5`, while the likelihood for belonging to B would be 0.4 \* (0.5)<sup>99</sup> = 6.310887210<sup>-31</sup> and the likelihood of belonging to C would be 0.1 \* (0.5)<sup>99</sup> = 1.577721810<sup>-31</sup>. So while clearly class B should be the correct one, since we didn't include 99 (missing) term probabilities in A, A has the incorrectly highest likelihood.
 
 To deal with this issue, we take the product of the probability from the Laplace smoothing *n* times, where *n* is the number of words in the description - the number of words that matched for that variety.
 
