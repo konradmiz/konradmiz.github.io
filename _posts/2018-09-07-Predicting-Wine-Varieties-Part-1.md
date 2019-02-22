@@ -18,7 +18,7 @@ There are many different approaches to text classification, and I'll be explorin
 
 It relies on Bayes' rule that:
 
-*P*(*A*\|*B*) = P(B\|A)P(A)}/P(B)
+*P*(*A*\|*B*) = P(B\|A)P(A)/P(B)
 
 Since P(B) is constant it can be ignored. By extending to multiple dimensions (and using the chain rule of probability to do so), it can be shown that the probability of class i is
 
@@ -170,7 +170,7 @@ The lowercase n represents the number of times that word appeared for that varie
 
 One consideration in a text mining task like this is that there may be words in the validation or testing datasets that do not appear in the training data for that variety of wine. Instead of treating these as impossible events with a probability zero (since they did actually occur), instead we need to define a non-zero probability for that word being used to describe that wine.
 
-This process is called Laplace or additive smoothing, and involves using a uniform distribution, such that we assign every not-seen word a probability of occurence of $\frac{1}{1 + \# of varieties + \# of distinct words}$.
+This process is called Laplace or additive smoothing, and involves using a uniform distribution, such that we assign every not-seen word a probability of occurence of 1/(1 + # of varieties + # of distinct words).
 
 ``` r
 num_varieties <- nrow(priors)
