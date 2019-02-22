@@ -18,7 +18,7 @@ There are many different approaches to text classification, and I'll be explorin
 
 It relies on Bayes' rule that:
 
-*P*(*A*\|*B*) = \frac{P(B\|A)P(A)}P(B)
+*P*(*A*\|*B*) = $\frac{P(B\|A)P(A)}{P(B)}$
 
 Since P(B) is constant it can be ignored. By extending to multiple dimensions (and using the chain rule of probability to do so), it can be shown that the probability of class i is
 
