@@ -31,4 +31,30 @@ The Environment class is responsible for defining which scooters are available a
 
 ## Results
 
-There are two qualitatively different patterns of behavior, depending on if the solutions are constrained or unconstrained. As mentioned above, the unconstrained problem is exactly the TSP: all scooters are visited, and the best solution is the shortest one between them. 
+There are two qualitatively different patterns of behavior, depending on if the solutions are constrained or unconstrained. As mentioned above, the unconstrained problem is exactly the TSP: all scooters are visited, and the best solution is the shortest one between them.
+
+### Unconstrained 
+
+When the distance is unconstrained, the best GA solutions visit every scooter, and tries to optimize the TSP. As seen in the image below, in the first generation (iteration), even the best-looking solution doesn't look great. Over the generations, however, the route starts looking more and more reasonable -- and the distance traveled by the best solution decreases too. 
+
+<img src="{{ site.baseurl }}/images/GeneticAlgorithmOptimization/Unconstrained/Routes.png" width="100%" />
+
+An alternate way of visualizing these results is below. It displays the distance traveled by the best solution at each generation. The 23 annotating the point displays the number of scooters visited. The distance falls monotonically, quickly at first and then plateauing. Around generation 180, the solution flatlines and doesn't change. It looks like an optimal solution has been found.  
+
+<img src="{{ site.baseurl }}/images/GeneticAlgorithmOptimization/Unconstrained/FitnessOverTime.png" width="100%" />
+
+
+### Constrained 
+
+When the distance is constrained, even the best solutions may not visit every scooter. Instead, the GAs try to fit in as many scooters as possible within the distance limit. In the image shown below, scooters are red, and the route between them is in green. Not all scooters are visited (there isn't a green line connecting every red dot). As in the unconstrained case, the first generation is pretty bad at finding a good solution: it visits only 27 scooters with the total distance traveled at 175,000 meters. Over the generations, the number of scooters increases, and the solution starts looking more and more reasonable. There isn't much in the final solution that looks like it could be changed without going over the distance limit. 
+
+<img src="{{ site.baseurl }}/images/GeneticAlgorithmOptimization/Constrained/Routes.png" width="100%" />
+
+The alternate way of showing the distance traveled shows some interesting behavior. The distance traveled stays within 165,000 to 175,000 meters. Adding a new scooter is represented by a new number on the point: the first generation's best solution visits 27 scooters, and a few generations later it increases to 28, 29, and further. Generally adding a scooter to the solution increases the distance traveled, but then falls as a more efficient route is found (or a different scooter is swapped in). The final solution, which visits 36 scooters, stays quite stable after roughly 100 generations.  
+
+<img src="{{ site.baseurl }}/images/GeneticAlgorithmOptimization/Constrained/FitnessOverTime.png" width="100%" />
+
+
+## Conclusion
+
+This work shows that GAs can efficiently find good solutions to a routing problem, both with constrained and unconstrained distances. When the distance is unconstrained, the problem is the Traveling Salesman Problem. When distance is constrained, the problem is finding the most nodes (scooters) that can be visited within the distance limit. Even though the scooter pilot program is over in Portland, this methodology has applications in bikeshare (routing to visit broken bikes or bikes needing inspection), and other routing problems within operations.  
