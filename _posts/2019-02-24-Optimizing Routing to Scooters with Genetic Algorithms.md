@@ -7,7 +7,7 @@ date: February 24, 2019
 
 ## Summary
 
-E-scooters overran Portland during the pilot period during summer 2018, and gave rise to a new gig-economy gig: finding scooters scattered around town to charge nightly. In this post, I build and explore a genetic algorithm to efficiently find good routing solutions to this TSP problem and a TSP-like problem (with qualitatively different behavior) if the solution-space is constrained. 
+E-scooters overran Portland during the pilot period during summer 2018, and gave rise to a new gig-economy role: finding scooters scattered around town to charge nightly. In this post, I build and explore a genetic algorithm to efficiently find good routing solutions to this TSP problem and a TSP-like problem (with qualitatively different behavior) if the solution-space is constrained. 
 
 <!--more-->
 
