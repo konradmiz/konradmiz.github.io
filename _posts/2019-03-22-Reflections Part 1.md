@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reflections on a Master’s, Part 1: Why I chose Systems Science for Data Science
+title: Reflections on a Master’s, Part 1- Why I chose Systems Science for Data Science
 excerpt_separator: <!--more-->
 date: March 22, 2019
 ---
