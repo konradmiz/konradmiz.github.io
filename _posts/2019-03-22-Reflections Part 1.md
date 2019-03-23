@@ -13,11 +13,10 @@ In this first post of a three-part series, I reflect on my Master of Science in 
 
 <!--more-->
 
+------
 
-## Content 
 
-
-I decided to become a data scientist two years ago. I had a bachelor’s degree in biology at the time but I didn’t want to get a PhD, so I was looking for something new. I’ve always been interested in cross-disciplinary topics (what drew me to biology was the complexity of the behavior of ant colonies; in retrospect, I was more interested in the complexity than the biology). Drew Conway’s venn diagram of data science (http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) inspired me: a discipline that was at the intersection of programming, math/statistics, and domain knowledge (and paid well, too!) sounded perfect. But I was a novice trying to break into the field, and as a novice I faced about six directions to go in:
+I decided to become a data scientist two years ago. I had a bachelor’s degree in biology at the time but I didn’t want to get a PhD, so I was looking for something new. I’ve always been interested in cross-disciplinary topics (what drew me to biology was the complexity of the behavior of ant colonies; in retrospect, I was more interested in the complexity than the biology). [Drew Conway’s venn diagram of data science](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) inspired me: a discipline that was at the intersection of programming, math/statistics, and domain knowledge (and paid well, too!) sounded perfect. But I was a novice trying to break into the field, and as a novice I faced about six directions to go in:
 
 Master’s in Statistics
   
