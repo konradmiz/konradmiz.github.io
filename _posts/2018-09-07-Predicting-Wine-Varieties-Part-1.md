@@ -5,12 +5,12 @@ excerpt_separator: <!--more-->
 date: September 07, 2018
 ---
 
-## Summary
+### Summary
 
 This is the first post in a series where I use different algorithms to try to classify, i.e. predict a wine variety given its description. I start off with a simple yet powerful algorithm called *Naive Bayes*. This algorithm is particularly easy to build (and use) from scratch and so though the code is not intended for use in production, it was fun to write. It performed admirably (33.16% accuracy on a validation set of 4917 rows representing 40 different varieties, given a description of more than 140 characters). It will be compared head-to-head with the other algorithms on the test set at the conclusion of this series!
 
 <!--more-->
-### Introduction
+#### Introduction
 
 I first played with the wine reviews dataset a couple weeks ago (post here: <https://konradmiz.github.io/Identifying-wine-qualities/>), by finding words that characterize popular varieties of wine, and making a bunch of different word clouds. Here, I try to do the more challenging task: predicting the variety of wine given a set of words in the description. This problem is known as text classification, and has a variety of usages, ranging from spam filtering to determining disputed authorship of several Federalist papers (link here: <https://link.springer.com/chapter/10.1007/978-1-4612-5098-2_70>).
 
