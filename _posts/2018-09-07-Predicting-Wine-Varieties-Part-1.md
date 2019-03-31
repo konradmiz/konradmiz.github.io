@@ -36,8 +36,7 @@ To do so I can find the overall frequency of the varieties within the dataset, *
 
 The word *Naive* comes from the model assumption that a word's occurrence in a piece of text is independent of every other word in the text. While this typically does not hold in any practical setting (words are correlated with each other: if a text contains the word 'wine' it is more likely to also contain the word 'drink'), the model still performs quite well in many applications.
 
-Data Import
------------
+#### Data Import
 
 ``` r
 library(readr)
@@ -54,8 +53,7 @@ wine <- read_csv("docs/Wine 130k reviews.csv") %>%
   distinct()
 ```
 
-Data Processing
----------------
+#### Data Processing
 
 Accurately predicting something is a challenging task for which a lot of data is typically required. Fortunately, the wine reviews are generally verbose, with mean 242.811 +/- 67.142 characters. I decided to select only verbose reviews, i.e., those that wouldn't fit on a tweet -- more than 140 characters. There is a possible tradeoff in the choice of description length: longer descriptions are more informative, but there are fewer of them to train the model on; shorter descriptions are more frequent, but predicting the class of a shorter description is more challenging.
 
@@ -182,9 +180,7 @@ num_words <- train_tokens %>%
 new_prob <- 1/(num_varieties + num_words + 1)
 ```
 
-Now that we have the priors (*P*(*C*<sub>*i*</sub>)) and the likelihoods (*P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>)), 
-
-the classification can now be done. For each description in the validation set, I perform a similar data processing task as I did with the training set:
+Now that we have the priors (*P*(*C*<sub>*i*</sub>)) and the likelihoods (*P*(*x*<sub>*j*</sub>|*C*<sub>*i*</sub>)), the classification can now be done. For each description in the validation set, I perform a similar data processing task as I did with the training set:
 
 -   tokenize the descriptions into individual words
 
@@ -196,13 +192,13 @@ For each variety, I pull the words that had been used for the description and ca
 
 For an example of this, imagine trying to classify a description into one of three classes A,B,C. The description is 100 words long, and the probabilities are like this:
 
-A: Only one word matches from the description: *P*(*x*<sub>1</sub>|*A*) = 0.5 and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub>|*A*) = 0
+A: Only one word matches from the description: *P*(*x*<sub>1</sub> | *A*) = 0.5 and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub> | *A*) = 0
 
-B: All words match the description, and *P*(*x*<sub>1</sub>|*B*) = 0.4, and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub>|*B*) = 0.5
+B: All words match the description, and *P*(*x*<sub>1</sub> | *B*) = 0.4, and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub> | *B*) = 0.5
 
-C: All words match the description, and *P*(*X*<sub>1</sub>|*C*) = 0.1, and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub>|*C*) = 0.5
+C: All words match the description, and *P*(*X*<sub>1</sub> | *C*) = 0.1, and *P*(*x*<sub>2</sub>, ..., *x*<sub>100</sub> | *C*) = 0.5
 
-By ignoring the words that didn't match, the likelihood of the word belonging to A would be `0.5`, while the likelihood for belonging to B would be 0.4 \* (0.5)<sup>99</sup> = 6.310887210<sup>-31</sup> and the likelihood of belonging to C would be 0.1 \* (0.5)<sup>99</sup> = 1.577721810<sup>-31</sup>. So while clearly class B should be the correct one, since we didn't include 99 (missing) term probabilities in A, A has the incorrectly highest likelihood.
+By ignoring the words that didn't match, the likelihood of the word belonging to A would be `0.5`, while the likelihood for belonging to B would be 0.4 \* (0.5)<sup>99</sup> = 6.310887210<sup>-31</sup> and the likelihood of belonging to C would be 0.1 \* (0.5)<sup>99</sup> = 1.5777218 * 10<sup>-31</sup>. So while clearly class B should be the correct one, since we didn't include 99 (missing) term probabilities in A, A has the incorrectly highest likelihood.
 
 To deal with this issue, we take the product of the probability from the Laplace smoothing *n* times, where *n* is the number of words in the description - the number of words that matched for that variety.
 
