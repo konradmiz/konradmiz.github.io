@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reflections on a Master’s, part 2 -  What I did well and not so well
+title: Reflections on a Master’s, Part 2 -  What I did well and what I could have done better
 excerpt_separator: <!--more-->
 date: March 31, 2019
 ---
