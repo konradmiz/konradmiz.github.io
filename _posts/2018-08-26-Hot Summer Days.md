@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 date: August 26, 2018
 ---
 
-## Summary
+### Summary
 
 In Portland we recently broke the record for number of days above 90 F in a year (with 30 in 2018, as of August 21st) (<https://twitter.com/NWSPortland/status/1032384600696213504>). I wanted to visualize whether this sustained heat really was unusual, or if I were falling for recency bias. I remembered an article from the New York Times that visualized Steph Curry's 3-point shooting 2015-2016 NBA season in an interesting way, showing the cumulative sum of three pointers made over the course of the season (<https://www.nytimes.com/interactive/2016/04/16/upshot/stephen-curry-golden-state-warriors-3-pointers.html>).
 
