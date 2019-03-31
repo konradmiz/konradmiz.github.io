@@ -6,7 +6,7 @@ date: March 22, 2019
 ---
 
 
-## Summary
+### Summary
 
 In this first post of a three-part series, I reflect on my Master of Science in Systems Science degree. I explain why I chose systems science, and how that’s helped me become a data scientist.  
 
