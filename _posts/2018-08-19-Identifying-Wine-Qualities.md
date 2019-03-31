@@ -6,13 +6,13 @@ date: August 19, 2018
 ---
 
 
-## Summary
+### Summary
 
 With over 100,000 wine reviews to play with (and to make up for my unrefined palate), I try to find words useful for describing different types of wine. Given a wine I've never had before, but I know which variety it is, I try to find both words that are common to describing that variety, and more subtle words to describe it if I feel like going out on a limb. I additionally create some word clouds of different wines by variety; these facetted plots are out of reach of the `wordcloud` library but done passably by extending `ggrepel`.
 
 <!--more-->
 
-### Introduction
+#### Introduction
 
 One of my favorite times of the week is Saturday evenings, when I share a bottle of wine with my girlfriend and we spend time talking or watching a show or movie. Unfortunately, my palate is not attuned to the subtleties of wine, especially not the $4 bottle we as frugal students invariably drink. She grew up smelling and tasting different wine varieties and does quite well picking out individual flavors. I can tell varieties of wine apart during a tasting, but definitely not whether I'm getting aromas of raspberries or blackberries in the wine at hand. Tired of this cluelessness, and after finding a dataset on Kaggle with over 100,000 reviews of different wines I figured I can use the power of crowdsourcing to help me out a bit.
 
@@ -28,8 +28,7 @@ This task is well suited for a 'bag of words' approach since I'm not interested 
 
 Other words are specific to the text domain. We'd expect words such as `wine`, `flavor`, `aroma` to appear frequently in a set of wine reviews across the different varieties, while the individual subtleties such as `oaky` flavor or a `mineral` aspect are more particular to the type of wine.
 
-Data Import
------------
+#### Data Import
 
 ``` r
 library(readr)
@@ -110,8 +109,7 @@ wine %>%
     ##  (Other)                 :73287   Georges Duboeuf   :   186  
     ##  NA's                    :    1   (Other)           :118794
 
-Some notes about the dataset:
------------------------------
+#### Some notes about the dataset:
 
 -   The majority of wines in the dataset are from the United States (50k) and most of those are from California (33.5k). In total there are 44 countries represented
 
@@ -125,12 +123,11 @@ Some notes about the dataset:
 
 -   There are some data quality issues (e.g., California is listed as both a province and a region\_1). This isn't relevant to my analysis but would need to be fixed if I were going in another direction
 
-Grouping descriptions of varieties together
--------------------------------------------
+#### Grouping descriptions of varieties together
 
 Since right now I'm only drinking popular, easily-accessible wines (and I only have finite screen space for my plots), I'm going to restrict myself to the most commonly rated wines.
 
-### Filtering the top most rated wine varieties
+#### Filtering the top most rated wine varieties
 
 ``` r
 wine_vars_num <- 12
@@ -145,7 +142,7 @@ top_vars <- wine %>%
 
 This returns a vector of the most popular (most-reviewed) wines with length 12. These wines are: Bordeaux-style Red Blend, Cabernet Sauvignon, Chardonnay, Merlot, Nebbiolo, Pinot Noir, Red Blend, Riesling, Rosé, Sauvignon Blanc, Syrah, Zinfandel
 
-### Getting the descriptions for each of these varieties
+#### Getting the descriptions for each of these varieties
 
 I filter the dataset so that the variety is one of the popular ones found above, and then collapse all of the users' descriptions into one long string ('bag of words') per variety of wine.
 
@@ -242,8 +239,8 @@ stemmed_words <- without_stop_words %>%
   select(-n, -word_stem)
 ```
 
-Words I need to know for each variety
--------------------------------------
+#### Words I need to know for each variety
+
 
 The most common 10 words per variety is a good starting point for me so I can start to sound like I have some idea about the wines I'm tasting. Of course, this is incumbent upon me knowing what kind of wine I'm drinking (I'll have to deal with not knowing the other type some other way).
 
@@ -275,8 +272,7 @@ There are some words common across most of these varieties: `fruit`, `tannins`, 
 
 On the white wine (Chardonnay Riesling, Sauvignon Blanc, Zinfandel) or lighter (Rose) side, I'm pretty safe declaring I get hints of `fruit` and `acidity`. However, I'll have to be careful to remember that only Chardonnays typically have that `oak`y finish.
 
-Distinguishing words between varieties
---------------------------------------
+#### Distinguishing words between varieties
 
 Some words are very common between varieties (`fruit`, `cherry`, `tannins`) and so can't be used to distinguish between them. Meanwhile some words don't show up frequently outside of that variety (Cabernet Sauvignon and `currant`, Chardonnay and `pear`, Merlot and `plum`, etc). These words are better at distinguishing different wine varieties than common shared words, so it would be nice to distinguish them better. One way of quantifying this is through TF-IDF (text-frequency/inter-document frequency). Words that are common in each corpus (here defined as a variety) are weighted low, while words that are frequent in one corpus but not in others are weighted higher.
 
@@ -306,10 +302,10 @@ ggplot(shorter_tf_idf, aes(x = order, y = tf_idf)) +
 
 Some interesting words emerge from this. Bordeaux-style reds are characterized as `powerful`, or `dominat[ing]`, Merlots have a `char` or `blackberry` element, Sauvignon Blancs are associated with `gooseberry`, and Syrahs have a `smoked` aspect (that I actually have been able to taste myself). Many of the wines have a floral quality as well -- `flower`, `petals`, and `violets` all make an appearance.
 
-Word cloud
-----------
+### Word cloud
 
-### Libraries
+
+#### Libraries
 
 While there exists a great wordcloud library in R (suitably named `wordcloud`), it uses base R graphics and doesn't support features such as facetting by variety that I'm looking for. On the other hand, ggplot2 does not natively have a wordcloud ability, but there is a workaround with `geom_text()` and especially the extremely helpful extension `ggrepel::geom_text_repel()`. With some inspiration from <http://mhairihmcneill.com/blog/2016/04/05/wordclouds-in-ggplot.html> and <https://bridgewater.wordpress.com/2012/04/16/word-cloud-alternatives/> I've created my own way of using `ggplot2` and `ggrepel`.
 
@@ -333,8 +329,8 @@ wine_plot_data <- stemmed_words %>%
   mutate(size = tf_idf/sum(tf_idf))
 ```
 
-The plot
---------
+#### The plot
+
 
 By specifying the segment size is 0 and the point padding is NA, I get non-overlapping text (as much as is possible in the number of iterations).
 
