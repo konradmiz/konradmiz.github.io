@@ -7,7 +7,7 @@ date: April 2, 2019
 
 ### Summary
 
-In this third post of a three-part series, I reflect on my Master of Science in Systems Science degree. As mentioned in part 1, systems science isn’t a traditional avenue into data science, but I think it offers some distinct advantages over other fields. Here I list what strike me as three of the biggest. 
+In this third post of a three-part series, I reflect on my Master of Science in Systems Science degree. As mentioned in part one, systems science isn’t a traditional avenue into data science, but I think it offers some distinct advantages over other fields. Here I list what strike me as three of the biggest. 
 
 <!--more-->
 
@@ -18,7 +18,7 @@ In this third post of a three-part series, I reflect on my Master of Science in 
 The general goal of systems science is a set of mathematical principles, broadly applicable to many scientific fields, which reveal insights between disparate domains. Because subjects of study differ between these domains, systems science takes the ‘stuff-free’ approach that finds commonalities related to their structure or behavior and not their physical composition. Understanding how one of these systems works means that similar systems are also understood. 
 
 
-This process was described by Claude Shannon, the founder of information theory (one of the foundations of systems science), at a lecture at Bell Labs (1952) where he described his problem-solving process. One of his ideas was that of finding solved problems (P’ and S’ for the related problem and its solution) that were related to the current problem (P). Finding the exact relationship between P and P’ maps the related solution (S’) to the currently-unknown solution (S).
+This process was described by Claude Shannon, the founder of information theory (one of the foundations of systems science), at a lecture at Bell Labs [where he described his problem-solving process](http://www1.ece.neu.edu/~naderi/Claude%20Shannon.html). One of his ideas was that of finding solved problems (P’ and S’ for the related problem and its solution) that were related to the current problem (P). Finding the exact relationship between P and P’ maps the related solution (S’) to the currently-unknown solution (S).
 
 
 Likewise, this search for foundational concepts is echoed in [Data Science for Business](http://data-science-for-biz.com/) (2013) by Foster Provost and Tom Fawcett, who write that they “focus on the unifying concepts [such as expected value calculations], presenting specific tasks and algorithms as natural manifestations of them…” (pp. xiv) which is a natural and logical extension of Shannon’s thinking. This continues when they write “in 10 years’ time the predominant technologies [the * stuff * of data science] will likely have changed or advanced enough that a discussion here would be obsolete, while the general principles are the same as they were 20 years ago and likely will change little over the coming decades” (pp. 16). 
