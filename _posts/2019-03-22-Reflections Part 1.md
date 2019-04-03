@@ -18,17 +18,17 @@ In this first post of a three-part series, I reflect on my Master of Science in 
 
 I decided to become a data scientist two years ago. I had a bachelor’s degree in biology at the time but I didn’t want to get a PhD, so I was looking for something new. I’ve always been interested in cross-disciplinary topics (what drew me to biology was the complexity of the behavior of ant colonies; in retrospect, I was more interested in the complexity than the biology). [Drew Conway’s venn diagram of data science](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) inspired me: a discipline that was at the intersection of programming, math/statistics, and domain knowledge (and paid well, too!) sounded perfect. But I was a novice trying to break into the field, and as a novice I faced about six directions to go in:
 
-Master’s in Statistics
+* Master’s in Statistics
   
-Master’s in Computer Science
+* Master’s in Computer Science
   
-Master’s in Systems Science
+* Master’s in Systems Science
   
-Master’s in Data Science (online, e.g. U.C. Berkeley’s)
+* Master’s in Data Science (online, e.g. U.C. Berkeley’s)
   
-Data science bootcamp
+* Data science bootcamp
   
-Try to get a data analyst job and work my way up 
+* Try to get a data analyst job and work my way up 
 
 I wanted an in-depth, in-person education (also, most job postings give favor to graduate degrees); these criteria ruled out the last three options. I spent a while deciding whether to pursue a masters in statistics, computer science, or systems science. Statistics underpins machine learning and artificial intelligence, fields as hot as they get right now. Computer science teaches programming and software architecture, how machine learning algorithms get implemented and how code that works gets developed. Ultimately, I chose systems science because I wanted a broader field that combines computer science, math/statistics, and business.I recognized that I needed more concrete skills too, so I also enrolled in a graduate certificate in Business Intelligence and Analytics.
 
