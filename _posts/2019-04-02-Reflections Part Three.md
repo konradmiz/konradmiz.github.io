@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 date: April 2, 2019
 ---
 
-###
+### Summary
 
 In this third post of a three-part series, I reflect on my Master of Science in Systems Science degree. As mentioned in part 1, systems science isn’t a traditional avenue into data science, but I think it offers some distinct advantages over other fields. Here I list what strike me as three of the biggest. 
 
@@ -38,6 +38,6 @@ Data science is about generating insights from data and then acting upon them. F
 
 Systems science offers relevant advice to all these issues, and most especially the third one. Systems thinking recognizes that cause-and-effect can be separated both by time and space, that the effects of an action take time to manifest (systems are slow to change), that nonlinear effects are more common than linear effects (a small change in input typically results in a non-proportional change in output). For example, a systems idea is that 
 
-Every action has side effects (it’s never possible to do just one thing)
+> Every action has side effects (it’s never possible to do just one thing)
 
 This suggests that even relevant, usable, and useful models can still produce bad behavior. One example of this is the now-growing importance of equity in data science (without being careful, models can continue the pattern of discrimination as a side-effect of their decisions, e.g. Cathy O’Neill’s book [Weapons of Math Destruction](https://weaponsofmathdestructionbook.com/)). This principle also suggests that the implementation of an algorithm can change the patterns it identifies (for example, fraud changes as the algorithms to detect it change). 
