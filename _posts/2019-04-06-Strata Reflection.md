@@ -36,6 +36,7 @@ The Strata Data Conference brings together hundreds of data people for a multi-d
 
 * The [reproducibility crisis](https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/72611) was cast as one quadrant of a two-by-two matrix:
 
+<img src="{{ site.baseurl }}/images/StrataReplicabilityMatrix.png" width="80%" />
 
 
 Verifiability is the idea that running the same code on the same data should produce the same results. This is a challenge with stochastic algorithms that produce slightly different outputs between runs, but can be enforced by using the same random seeds. 
