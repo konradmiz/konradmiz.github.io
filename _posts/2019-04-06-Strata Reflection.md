@@ -7,9 +7,11 @@ date: April 6, 2019
 
 ### Summary
 
-I attended the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-ca) in San Francisco last week (March 25-28) and summarise what I thought were interesting or thought-provoking ideas I encountered. 
+I attended the [Strata Data Conference](https://conferences.oreilly.com/strata/strata-ca) in San Francisco last week (March 25-28) and summarise what I thought were interesting or thought-provoking ideas I encountered!
 
 <!--more-->
+
+------
 
 The Strata Data Conference brings together hundreds of data people for a multi-day conference featuring tutorials, keynotes, and breakout sessions. Unfortunately I came down with a cold the night before the conference so I wasn’t in top condition for networking, but I still learned a lot from the speakers! Some insights I gleaned over the three-day event:
 
