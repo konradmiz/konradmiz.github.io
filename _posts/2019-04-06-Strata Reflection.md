@@ -38,14 +38,13 @@ The Strata Data Conference brings together hundreds of data people for a multi-d
 
 <img src="{{ site.baseurl }}/images/StrataReplicabilityMatrix.png" width="80%" />
 
-
 Verifiability is the idea that running the same code on the same data should produce the same results. This is a challenge with stochastic algorithms that produce slightly different outputs between runs, but can be enforced by using the same random seeds. 
 
 
 Repeatability is what people mean by reproducibility: using the same experimental method or the same code on different data (e.g. a different population tested in the same manner). Some solutions that scientists are working on to standardise are pre-registration (defining and documenting the hypothesis and analysis methodology before the experiment), [blinded analysis](https://www.nature.com/news/blind-analysis-hide-results-to-seek-the-truth-1.18510), and [working to fight the p < 0.05 cutoff of significance](https://www.nature.com/articles/d41586-019-00857-9). 
 
 
-Robustness (same data, different methods) presented an especially interesting insight. The speaker presented a slide showing 29 different research teams given the same dataset of soccer referee and player race and told to analyze it as they saw best. The result was 29 different statistical models with results ranging from a negative likelihood of race on fouls called to no difference to a positive likelihood. This problem is especially tough because even though statistics is generally thought of as exact and objective, there’s actually a lot of leeway for which model to choose -- and this results in very different results! The suggestion was to run multiple kinds of analyses and aggregate the results of them. 
+Robustness (same data, different methods) presented an especially interesting insight. The speaker presented a slide showing the results of [29 different research teams who given the same dataset and told to analyze it as they saw best](https://journals.sagepub.com/doi/10.1177/2515245917747646). The result was 29 different statistical models with results ranging from a negative likelihood  of the variable on the outcome to no difference to a positive likelihood. This problem is especially tough because even though statistics is generally thought of as exact and objective, there’s actually a lot of leeway for which model to choose -- and this results in very different results! The suggestion was to run multiple kinds of analyses and aggregate the results of them. 
 
 
 Generalization is the purpose of science, our speaker stated (drawing insights that hold across different datasets and different methodologies), but we didn’t spend much time talking about it.  
