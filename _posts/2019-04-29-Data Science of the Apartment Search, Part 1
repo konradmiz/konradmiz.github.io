@@ -2,7 +2,7 @@
 layout: post
 title: Data Science of the Apartment Search, part 1
 excerpt_separator: <!--more-->
-date: April 6, 2019
+date: April 29, 2019
 ---
 
 ### Summary
@@ -44,7 +44,7 @@ https://towardsdatascience.com/using-python-to-find-myself-a-rental-home-a0b1bf6
 
 10) (optional) Using Slack interactive messages, AWS Gateway, and AWS Lambda to allow upvoting/downvoting apartments (for fun, I haven’t used AWS Gateway before)
 
-10) A retrospective of this process, including a description of how this worked out!
+11) A retrospective of this process, including a description of how this worked out!
 
 
 
